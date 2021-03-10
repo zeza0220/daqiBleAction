@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/serviceLayout"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="vertical"
+            android:background="?android:attr/selectableItemBackground">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:padding="1dp"
+                android:text="Service"
+                android:textColor="@android:color/black"
+                app:layout_constraintStart_toStartOf="@+id/serviceType"
+                android:layout_marginTop="3dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/textView"/>
+
+        <TextView
+                android:id="@+id/uuidTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UUID:"
+                android:textSize="14dp"
+                android:layout_marginTop="3dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+                android:id="@+id/uuidTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="@android:color/black"
+                app:layout_constraintStart_toEndOf="@+id/uuidTitle"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="3dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView"/>
+
+        <TextView
+                android:id="@+id/serviceType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="3dp"
+                app:layout_constraintTop_toBottomOf="@+id/uuidTitle"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout
+            android:id="@+id/otherLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+        <!--Characteristic的布局-->
+        <LinearLayout
+                android:id="@+id/characteristicLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+        </LinearLayout>
+        <!--二级Service的布局-->
+        <LinearLayout
+                android:id="@+id/secondaryServiceLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+        </LinearLayout>
+    </FrameLayout>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grayLine"/>
+</LinearLayout>

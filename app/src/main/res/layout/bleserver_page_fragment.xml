@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+        android:orientation="vertical">
+    <Button
+            android:id="@+id/startAdvertisingBtn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="发送广播"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"/>
+
+    <Button
+            android:id="@+id/stopAdvertisingBtn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="停止广播"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+    <Button
+            android:id="@+id/addGattServerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="添加服务"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+        <TextView
+                android:id="@+id/displayView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="14dp"
+                android:lineSpacingExtra="1dp"/>
+    </ScrollView>
+</LinearLayout>

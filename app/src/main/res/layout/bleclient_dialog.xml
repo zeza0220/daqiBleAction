@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="写入数据"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="15dp"/>
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="0x"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"/>
+        <EditText
+                android:id="@+id/valueEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="20dp"/>
+        <TextView
+                android:id="@+id/positiveBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确定"
+                android:padding="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="bottom|right"/>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+            android:id="@+id/descriptorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_marginTop="3dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="8dp"
+            android:text="Descriptor"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+            android:id="@+id/descriptorUUIDTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="1dp"
+            android:text="UUID:"
+            app:layout_constraintTop_toBottomOf="@+id/descriptorName"/>
+
+    <TextView
+            android:id="@+id/descriptorUUID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="1dp"
+            app:layout_constraintTop_toBottomOf="@+id/descriptorName"
+            app:layout_constraintStart_toEndOf="@+id/descriptorUUIDTitle"
+            android:layout_marginStart="3dp"/>
+
+    <TextView
+            android:id="@+id/descriptorValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="1dp"
+            app:layout_constraintTop_toBottomOf="@+id/descriptorUUID"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"/>
+
+    <ImageView
+            android:id="@+id/readBtn"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:src="@drawable/botto"
+            android:layout_marginTop="3dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"/>
+
+    <ImageView
+            android:id="@+id/writeBtn"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:src="@drawable/totop"
+            android:layout_marginTop="3dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/readBtn"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
